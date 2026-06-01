@@ -1,0 +1,165 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  --background: #040714;
+  --surface: rgba(15, 23, 42, 0.72);
+  --surface-strong: rgba(15, 23, 42, 0.95);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --background: #f8fafc;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: rgba(255, 255, 255, 1);
+  --text: #0f172a;
+  --muted: #64748b;
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 18%),
+    radial-gradient(circle at 75% 20%, rgba(30, 64, 175, 0.12), transparent 22%),
+    var(--background);
+  color: var(--text);
+}
+
+.glass-panel,
+.glass-card {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+:root[data-theme='light'] .glass-panel,
+:root[data-theme='light'] .glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+:root[data-theme='dark'] .glass-panel,
+:root[data-theme='dark'] .glass-card {
+  background: rgba(15, 23, 42, 0.62);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.card.glass-panel {
+  overflow: hidden;
+}
+
+.movie-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  border-radius: 1.6rem;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.18);
+}
+
+.input-group .form-control,
+.input-group .input-group-text,
+.input-group .form-select {
+  border-radius: 1rem;
+}
+
+.input-group-text {
+  width: 3rem;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #38bdf8 0%, #8b5cf6 45%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card.bg-secondary.bg-opacity-10,
+.card.bg-secondary.bg-opacity-15 {
+  backdrop-filter: blur(12px);
+}
+
+.movie-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Gradient heading */
+.gradient-text {
+  background: linear-gradient(90deg, #38bdf8 0%, #7c3aed 50%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+/* Slightly brighter text for dark theme */
+.text-light-50 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Theme toggle icon styles */
+.toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 240ms ease, opacity 180ms ease;
+}
+.toggle-icon.icon-sun {
+  color: #f6c358;
+}
+.toggle-icon.icon-moon {
+  color: #93c5fd;
+}
+.btn .toggle-icon svg {
+  display: block;
+}
+.btn[aria-pressed='true'] .toggle-icon {
+  transform: rotate(20deg) scale(1.05);
+}
+
+/* small spinner tweak */
+.input-group-text .spinner-border {
+  opacity: 0.95;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+  color: #ffffff;
+}
