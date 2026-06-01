@@ -1,3 +1,4 @@
+# Movie-Explore
 # Movie Search App
 
 A dark-theme React movie search application powered by the OMDB API. Search for movies in real time, browse responsive movie cards, open details in a modal, and toggle between light and dark mode.
