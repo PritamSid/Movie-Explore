@@ -3,6 +3,8 @@
 
 A dark-theme React movie search application powered by the OMDB API. Search for movies in real time, browse responsive movie cards, open details in a modal, and toggle between light and dark mode.
 
+:: web Link- https://movie-explore-smoky.vercel.app/
+
 ## Features
 
 - Search movies by title with 500ms debounce
