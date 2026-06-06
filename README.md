@@ -1,3 +1,5 @@
+
+<img width="1920" height="2843" alt="screencapture-movie-explore-51rvht6tl-movie-explore-s-projects-vercel-app-2026-06-06-20_25_41" src="https://github.com/user-attachments/assets/b2005e58-a3cf-4dff-bfc3-bc5b71b72fd3" />
 # Movie-Explore
 # Movie Search App
 
